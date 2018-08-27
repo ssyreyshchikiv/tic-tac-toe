@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+	background-color: #ffa500;
+	user-select: none;
+}
+
+.wrapper {
+    min-width: 320px;
+    margin-top: 60px;
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
+	font-weight: bold;  
+}
+
+.wrapper h1 {
+	text-transform: uppercase;
+	font-size: 70px;
+	margin-bottom: 5px;
+}
+
+.informationGame {
+	margin: 30px;
+}
+
+.informationCol {
+	background-color: #fff;
+    min-width: 300px;
+    height: 70px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 50px;
+    line-height: 70px;
+    text-transform: uppercase;
+}
+
+.row, .informationGame {
+	display: flex;
+	justify-content: center;
+}
+
+.col {
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    margin: 3px;
+    font-size: 50px;
+    line-height: 70px;
+    text-transform: uppercase;
+}
+
+.col:hover {
+	cursor: pointer;
+}
+
+.wrapper button {
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Amatic SC', cursive;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+	color: #000;
+    background-color: #fff;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.col:hover,
+button:hover {
+	cursor: pointer;
+	background-color: #808080;
+}
+
+.col:active,
+button:active {
+	background-color: #606060
+}
+
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+
+@media screen and (min-device-width: 320px) and (max-width:800px) {
+    .informationGame {
+    	flex-direction: column;
+    	align-items: center;	
+    }
+    .informationCol {
+    	max-width: 400px;
+    	margin-bottom: 7px;
+    }
+}

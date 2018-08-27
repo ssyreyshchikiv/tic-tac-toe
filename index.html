@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Крестики нолики</title>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Крестики нолики</h1>
+    <div class="informationGame">
+      <div class="informationCol">Побед игрока X: <span id="numberOfWinsX">0</span></div>
+      <div id="courseOfTheGame" class="informationCol">ходит игрок X</div>
+      <div class="informationCol">Побед игрока O: <span id="numberOfWinsO">0</span></div>
+    </div>
+    <div id="gameContainer">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
+    </div>
+    <button id="reset">Очистить поле</button>
+    <button id="restart">Начать сначала</button>
+  </div>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
