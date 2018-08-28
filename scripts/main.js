@@ -1,14 +1,14 @@
 var player = "X";
 var field = inicializationField();
-var сourseOfTheGame = document.getElementById("courseOfTheGame");
+var courseOfTheGame = document.getElementById("courseOfTheGame");
 var numberOfWinsX = document.getElementById("numberOfWinsX");
 var numberOfWinsO = document.getElementById("numberOfWinsO");
 var reset = document.getElementById("reset");
 var restart = document.getElementById("restart");
 var stepCount = 0;
 
-winsX = 0;
-winsO = 0;
+var winsX = 0;
+var winsO = 0;
 
 
 function inicializationField() {
@@ -36,9 +36,9 @@ function divClick() {
 			stepCount++;
 
 			if(stepCount === 9) {
-				сourseOfTheGame.innerHTML = "ничья"
+				courseOfTheGame.innerHTML = "ничья"
 			} else {
-				сourseOfTheGame.innerHTML = "ходит игрок " + player;
+				courseOfTheGame.innerHTML = "ходит игрок " + player;
 			}
 			testOfTheWinner(field);
 		}
@@ -53,13 +53,13 @@ function gameEnd(field) {
 	if(player ==="O") {
 		winsX++;
 		numberOfWinsX.innerHTML = winsX;
-		сourseOfTheGame.innerHTML = "Победил игрок X";
+		courseOfTheGame.innerHTML = "Победил игрок X";
 		
 				
 	} else {
 		winsO++
 		numberOfWinsO.innerHTML = winsO;
-		сourseOfTheGame.innerHTML = "Победил игрок O";
+		courseOfTheGame.innerHTML = "Победил игрок O";
 		
 				
 		}
@@ -93,7 +93,7 @@ reset.addEventListener("click", function(){
 		field[i].addEventListener("click", divClick);
 		field[i].innerHTML = "";
 		player = "X";
-		сourseOfTheGame.innerHTML = "ходит игрок " + player;
+		courseOfTheGame.innerHTML = "ходит игрок " + player;
 		stepCount = 0;
 	}	
 })
